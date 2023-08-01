@@ -1,0 +1,24 @@
+<Page>
+    <ActionBar>
+        <NavigationButton [nsRouterLink]="['/home']" android.systemIcon="ic_menu_back"></NavigationButton>
+    </ActionBar>
+    <GridLayout rows="auto,*">
+    <SearchBar  row="0" hint="search your bus stop" 
+    [text]="searchBar"  (textChange)="onTextChanged($event)"
+    (clear)="onClear($event)" (submit)="onSubmit($event)" 
+     style="background-color: white; margin: 10;"  ></SearchBar>
+    <ListView  id="listview1"   row="1" [items]="myItems"    
+    (itemTap)="onItemTap($event)"
+     class="list-group">
+     <ng-template let-item="item">				
+             <GridLayout>
+                <Label text="{{item}}" class="list-group-item">
+                </Label>
+            </GridLayout>
+     </ng-template>
+    </ListView>
+</GridLayout>
+</Page>
+
+<!--     
+-->

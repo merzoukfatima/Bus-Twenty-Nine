@@ -1,0 +1,27 @@
+
+<!--latitude="35.399810"
+		longitude="0.139642"
+		zoomLevel="14" -->
+
+<Page 
+    xmlns="http://www.nativescript.org/tns.xsd"
+    xmlns:maps="nativescript-google-maps-sdk"
+>
+<ActionBar>
+    <ActionItem 
+	android.systemIcon="ic_menu_search" android.position="actionBar" 
+	[nsRouterLink]="['/search']" ></ActionItem>
+</ActionBar>
+
+<GridLayout rows="auto">
+	<<ContentView row="0" height="100%" width="100%">
+        <maps:mapView
+		#map
+		showsUserLocation="true"
+		(mapReady)="onMapReady($event)"
+		>
+	</maps:mapView>
+</ContentView> 
+	
+	</GridLayout>
+</Page>

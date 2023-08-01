@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "21075798438",
+    "firebase_url": "https://fatima-87595.firebaseio.com",
+    "project_id": "fatima-87595",
+    "storage_bucket": "fatima-87595.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21075798438:android:44a201e305131c9b480767",
+        "android_client_info": {
+          "package_name": "org.nativescript.Bus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21075798438-hftbjioes8ao2hg7abbi32f9d3g9jmln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoW-bLJEN6p8MlqjPixkKKwUK0Bp8fEHo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21075798438-hftbjioes8ao2hg7abbi32f9d3g9jmln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

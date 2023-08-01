@@ -1,0 +1,59 @@
+
+  #mybusway{
+    font-size:40px;
+    color:rgb(240, 195, 0);
+    text-align :center;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    
+    }
+    .page{
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+     /* background-image: transparent url("res://bus");*/
+      opacity: 0.9;
+      } 
+      /* url("~/images/");https://i.pinimg.com/originals/21/b3/ea/21b3ea6c112d697e9ac17743158471cc.jpg*/
+    .form {
+    margin-left: 150px;
+    margin-right: 100px;
+    flex-grow: 20;
+    vertical-align: middle;
+    }
+    .bold{
+    margin-left: 7;
+    margin-top: 5px;
+    font-size:14px;
+    color:rgb(185, 184, 184) ;
+    text-align :bottom;
+    }
+    .boldd{
+      margin-right: 7;
+      margin-top: 5px;
+      font-size:15px;
+      color:rgb(185, 184, 184) ;
+      text-align :bottom;
+      }
+    .buttonsignin{
+      color: black;
+      font-size: 16px;
+      margin: 20px;
+      padding: 40px 30%;
+      border-radius: 13px;
+      border: 6px solid black;
+      background-color:rgb(240, 195, 0);
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      font-weight: bold;
+    }
+    
+    .input{
+    placeholder-color:rgb(185, 184, 184) ;
+    font: size 28px; 
+    font-weight: bold;
+    border: 6px solid black;
+  
+    }
+    

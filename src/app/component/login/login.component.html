@@ -1,0 +1,24 @@
+<Page class="page">
+    <FlexLayout>
+      <StackLayout class="form">
+          <Label text="MyBusWay" id="mybusway"></Label>
+           <StackLayout *ngIf="!isLoggingIn">  
+              <TextField required #name class="input" hint="User Name" [(ngModel)]="user.name"
+              ></TextField>
+              </StackLayout>
+          <StackLayout>  
+             <TextField  required #email class="input" hint="Email" keyboardType="email" autocorrect="false" autocapitalizationType="none" [(ngModel)]="user.email" ></TextField>
+          </StackLayout>
+          <StackLayout>
+           <TextField required #password class="input" hint="Password" secure="true" [(ngModel)]="user.password" ></TextField>
+          </StackLayout>
+          <StackLayout>
+            <Button [text]="isLoggingIn ? 'Log In' : 'Sign In'" (tap)="submit()" class="buttonsignin"
+            ></Button> 
+          </StackLayout>
+         <Label *ngIf="isLoggingIn" text="Forgot your password?"  (tap)="forgotPassword()" class="bold"></Label>
+           <Label (tap)="toggleDisplay()" class="bold"  [text]="isLoggingIn ? 'Sign In ' : 'Back to Login'" [nsRouterLink]="isLoggingIn ? ['/']:['/signin'] " >
+         </Label>
+      </StackLayout>
+    </FlexLayout>
+ </Page>
